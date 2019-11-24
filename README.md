@@ -23,7 +23,10 @@ yourEmailAccount@yourdomain.com
 passwordForIpVanishAccount
 
 ```
-
+Defina as permissões do arquivo **/etc/openvpn/ipvanish/credentials.txt** para 0400 da seguinte forma: 
+```
+sudo chmod 0400 /etc/openvpn/ipvanish/credentials.txt
+```
 
 Posteriormente a configuração da credencial, basta iniciar o programa da seguinte forma:
 
