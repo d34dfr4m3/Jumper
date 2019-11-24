@@ -1,5 +1,7 @@
 # Jumper
-Esse programa utiliza uma licença do IPVanish e tem como objetivo auxiliar na troca nós durante ataques de intrusão/redteam/bugbounty. De posse de credenciais válidas, o programa cria um túnel, mata e cria novamente com outro nó. 
+Esse programa interage com serviços de VPN do provedor IPVanish onde é necessário uma licença do IPVanish e tem como objetivo auxiliar na troca nós durante ataques de intrusão/redteam/bugbounty. Utilizando as credenciais da sua licença, o programa é capaz de configurar um tunel VPN e realizar a troca do mesmo com poucos comandos adotando um logtrack que contém informações de endereços IP de saída e horário para auxiliar na documentação dos teste.
+
+Os arquivos de configuração da VPN dentro do diretório **nó** sofreram alterações para o correto funcionamento da ferramenta. 
 
 Código foi testado em uma distribuição Kali Linux baseada em debian. 
 - Debian 5.3.9-3kali1
@@ -72,3 +74,8 @@ $ sudo cat /var/log/ipvanish/logtrace
 [**] SUCCESS: Connect with X.X.X.X located at "Italy" at 11/24/19_18:47:23
 [**] SUCCESS: Connect with X.X.X.X located at "Netherlands" at 11/24/19_18:51:26
 ```
+
+
+## ToDo 
+- Implementar uma feature de stop/kill, uma vez que o teste termina e não é mais necessário utilizar túnel. No cenário atual a unica forma é eliminando o processo e reconfigurando as rotas do sistema operacional.
+
