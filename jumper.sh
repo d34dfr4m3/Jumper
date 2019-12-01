@@ -3,9 +3,9 @@
 # Colocar switch case com opcao de trocar o nó(restart), parar ou iniciar.
 # Verificar se chmod 0400  /etc/openvpn/ipvanish/credentials.txt
 #set -x
-LOGPATH='/var/log/ipvanish/'
+LOGPATH='/var/log/jumper/'
 LOGFILE='logtrace'
-pathDirFiles='/opt/ipvanish/'
+pathDirFiles='/opt/jumper/'
 NODESDIR="nodes"
 
 function delTun(){
